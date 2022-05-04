@@ -1,0 +1,216 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: url(../img/fondo.jpg); }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #4a4949; }
+
+img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+  padding: 10px; }
+
+nav, .servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto; }
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%; }
+
+h1 {
+  text-align: center;
+  font-size: 3rem; }
+
+p {
+  font-size: 1.8rem;
+  color: #4a4949; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter; }
+
+.btn, .btn-principal, .btn-secundario {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms; }
+  .btn:hover, .btn-principal:hover, .btn-secundario:hover {
+    transform: scale(1.1); }
+
+.btn-principal {
+  color: #fff;
+  background-color: #6495ED; }
+
+.btn-secundario {
+  background-color: #b3afaf; }
+
+.logo {
+  width: 75px;
+  height: 75px; }
+
+.header {
+  position: fixed;
+  top: 0;
+  border-top: 30px solid #343533;
+  width: 100%; }
+
+.wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; }
+  nav ul {
+    display: flex;
+    padding: 0; }
+    nav ul a {
+      padding: 10px;
+      font-size: 1.6rem;
+      font-weight: bold; }
+    nav ul a:hover {
+      color: #6495ED;
+      transform: scale(1.1); }
+
+.presentación {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .presentación .flex-item2 {
+    text-align: center; }
+  .presentación h1 {
+    margin-top: 0;
+    padding-right: 20px;
+    font-size: 3rem; }
+  .presentación p {
+    padding-right: 20px;
+    padding-bottom: 10px; }
+
+.servicios div {
+  text-align: center; }
+
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap; }
+
+.social {
+  margin: 50px; }
+  .social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .social div.links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .social div.links a {
+      margin: 0 30px; }
+    .social div.links i {
+      font-size: 3rem; }
+
+footer {
+  min-height: 80px;
+  background-color: #343533;
+  margin-top: 0; }
+  footer .footer-content {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+form {
+  width: 450px;
+  margin: auto;
+  margin-bottom: 100px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+  font-family: monospace; }
+  form h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 10px; }
+  form input, form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none; }
+  form label {
+    font-size: 14px;
+    background-color: #fff; }
+  form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%; }
+
+.carouselExampleControls {
+  justify-items: center;
+  align-items: center; }
+
+@media (min-width: 1400px) {
+  nav, .servicios, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto; } }
+
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    flex-direction: column; }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px; }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    padding-top: 20px; } }
+
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px; }
+    .presentacion div h1, .presentacion div p {
+      padding: 0; } }
+
+@media (max-width: 480px) {
+  form {
+    width: 100%; } }
