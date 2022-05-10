@@ -1,7 +1,7 @@
 // Pantallas xl
 
 @media(min-width: 1400px){
-    nav, .servicios, .footer-content, .presentacion{
+    nav, .servicios, .footer-content, .presentacion, .container, .about-section{
         width: 60%;
         margin: auto;
     }
@@ -25,6 +25,12 @@
         padding-bottom: 20px;
         padding-top: 20px;
         }
+    
+    .container{
+        @include caja-flex(center, center, wrap);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
 }
 
 

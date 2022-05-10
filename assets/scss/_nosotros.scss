@@ -1,0 +1,35 @@
+.about-section{
+    background: url(../img/au.jpg) no-repeat right;
+    background-size: 50%;
+    background-color: rgb(182, 213, 174);
+    overflow: hidden;
+
+    .inner-container{
+        width: 55%;
+        float: left;
+        background-color: rgb(182, 213, 174);
+        padding: 30px;
+
+        h1{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: 900;
+        }
+
+        p{
+            font-size: 15px;
+            color: rgb(74, 73, 73);
+            line-height: 30px;
+            text-align: justify;
+            margin-bottom: 40px;
+        }
+
+        .skills{
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 13px;
+        }
+    }
+
+}

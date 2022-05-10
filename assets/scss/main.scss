@@ -13,8 +13,8 @@
 }
 
 .wrapper {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 25px;
 }
 
 // Ejemplo Nesting
@@ -108,9 +108,9 @@ footer{
 form{
     width: 450px;
     margin:auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     background: rgba(0,0,0,0.4);
-    padding: 10px 20px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-top: 20px;
     border-radius: 7px;
@@ -150,5 +150,9 @@ form{
     align-items: center;
 }
 
-@import 'medios'
+@import 'comunidad';
+
+@import 'nosotros';
+
+@import 'medios';
 
